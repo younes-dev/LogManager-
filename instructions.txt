@@ -1,0 +1,2 @@
+1) exécuter la cmd  pour voire les les interface log  : php bin/console debug:autowiring log
+la recherche Typesense avec Symfony  : https://acseo.fr/symfony-acseo-typesense-bundle
