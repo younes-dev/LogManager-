@@ -29,3 +29,9 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    DbHandler2:
+        class: App\Utility\DbHandler2
+
+    App\Controller\HomeController:
+        arguments: ["@monolog.logger.db"]

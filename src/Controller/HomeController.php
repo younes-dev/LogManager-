@@ -11,12 +11,12 @@ class HomeController extends AbstractController
 {
     /**
      * @Route("/home", name="home")
-     * @param LoggerInterface $logger
+     * @param LoggerInterface $dbLogger
      * @return Response
      */
-    public function index(LoggerInterface $logger)
+    public function index(LoggerInterface $dbLogger):Response
     {
-        $logger->info("Notre 1ére log");
+        $dbLogger->info("Notre 1ére log");
 
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
