@@ -35,3 +35,11 @@ services:
 
     App\Controller\HomeController:
         arguments: ["@monolog.logger.db"]
+
+    DbProcessor:
+        class: App\Utility\DbProcessor
+        tags:
+            - {name: monolog.processor, handler: DbHandler2}
+#            - { name: monolog.processor }
+
+
